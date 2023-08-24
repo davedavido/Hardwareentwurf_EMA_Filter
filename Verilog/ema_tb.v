@@ -3,11 +3,11 @@ module ema_tb;
 reg clk, rst;
 
 
-reg [7:0] x_i; //Q8.0
-reg [7:0] alpha_i; //Q0.8 
+reg [15:0] x_i; //Q8.0
+reg [15:0] alpha_i; //Q0.8 
 reg valid_i;
 
-wire signed [7:0] y_o; //Q8.0
+wire signed [15:0] y_o; //Q8.0
 wire bussy_o, valid_o;
 
 integer fd_i, fd_o, tmp;
@@ -39,10 +39,10 @@ initial begin
 	#10
 	clk		= 0;
 	rst	    = 1;
-	x_i		= 8'd0;
-	alpha_i = 8'd0;
+	x_i		= 16'd0;
+	alpha_i = 16'd0;
 	valid_i = 0;
-	alpha_i = 8'd102; // > alpha = 0.4
+	alpha_i = 16'd26214; // > alpha = 0.4
 	#2
 	rst 		= 0;
 end

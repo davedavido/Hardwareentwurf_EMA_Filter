@@ -9,55 +9,78 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA/20.1
-vALU
-Z0 !s110 1692871588
+valu
+Z0 !s110 1692888508
 !i10b 1
-!s100 T8TfkaaAWB>]3A=A6Gg>g1
+!s100 gdeoGnVERPBUobEd6j<3g3
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IlPimz2k]TD6ROS?B[W^j41
+IcIZ>N_d4Y3;hYkk_5^oAX3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/ModelSim
-w1692871538
+w1692888350
 Z4 8C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/alu.v
 Z5 FC:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/alu.v
-!i122 3
-L0 1 56
+!i122 138
+L0 1 76
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1692871588.000000
+Z7 !s108 1692888508.000000
 Z8 !s107 C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/alu.v|
 Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/alu.v|
 !i113 1
 Z10 o-work work
 Z11 tCvgOpt 0
-n@a@l@u
-valu
-!s110 1692885212
+vALU
+Z12 !s110 1692871588
 !i10b 1
-!s100 leL@kdmKUjkzGaT4iTCRQ1
+!s100 T8TfkaaAWB>]3A=A6Gg>g1
 R1
-IV2Fk03Mz^@1294]eMQIoo0
+IlPimz2k]TD6ROS?B[W^j41
 R2
 R3
-w1692878318
+w1692871538
 R4
 R5
-!i122 111
-L0 1 76
+!i122 3
+L0 1 56
 R6
 r1
 !s85 0
 31
-Z12 !s108 1692885212.000000
+Z13 !s108 1692871588.000000
 R8
 R9
 !i113 1
 R10
 R11
-vEMA
+n@a@l@u
+vema
 R0
+!i10b 1
+!s100 <I:01JRdP037`JzDY8X8i0
+R1
+I@:_zN_Z_2Z[:8cL9XM3mJ3
+R2
+R3
+w1692888393
+8C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema.v
+FC:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema.v
+!i122 140
+L0 1 176
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema.v|
+!i113 1
+R10
+R11
+vEMA
+R12
 !i10b 1
 !s100 Yb?fnbdAP0hSUlAl9O`iC0
 R1
@@ -73,54 +96,31 @@ R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/EMA.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/EMA.v|
 !i113 1
 R10
 R11
 n@e@m@a
-vema
-Z13 !s110 1692885213
-!i10b 1
-!s100 `=dFH8WV9Ka:::S3A1U430
-R1
-I74zKd;XE]D1?YY1ICLRGB0
-R2
-R3
-w1692880448
-8C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema.v
-FC:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema.v
-!i122 113
-L0 1 176
-R6
-r1
-!s85 0
-31
-!s108 1692885213.000000
-!s107 C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema.v|
-!i113 1
-R10
-R11
 vema_tb
-R13
+R0
 !i10b 1
-!s100 fM[3Gm3S_DCWb@lTe:CPk1
+!s100 DmXDJBBV_4EJAlBgXzlDb2
 R1
-IkGz<lV7EcmS[iY5?;0zUP0
+IP`mMQ;=kSCo_TI;MKQ9JD3
 R2
 R3
-w1692885199
+w1692887431
 8C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema_tb.v
 FC:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema_tb.v
-!i122 112
+!i122 139
 L0 1 67
 R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/Hardwareentwurf_EMA_Filter/Verilog/ema_tb.v|
 !i113 1

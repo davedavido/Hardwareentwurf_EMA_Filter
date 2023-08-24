@@ -10,8 +10,8 @@ module alu(
 	valid_o
 );
 
-parameter Win 		= 8;
-parameter Wout 		= 16;
+parameter Win 		= 16;
+parameter Wout 		= 32;
 
 input 					clk;
 input 					rst;
@@ -21,7 +21,7 @@ input 					valid_i;
 input [1:0] 			mode_i;
 
 
-output reg signed  [Wout-1:0] res_o;
+output reg signed  [Wout-1:0] res_o; //1 Bit mehr wegen alpha
 output reg valid_o;
 
 //ALU Modes

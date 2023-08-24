@@ -10,8 +10,8 @@ module ema (
 		valid_o
 );
 
-parameter Win = 8;
-parameter Wout = 8;
+parameter Win = 16;
+parameter Wout = 16;
 localparam Winternal = Win + Wout;
 
 //ALU Modes
@@ -137,7 +137,7 @@ case (current_state)
 		if (alu_result_valid) begin
 		alu_mode 		= ALU_IDLE;
 		next_state 		= YMULT_FETCH ;
-		mult_x_a_temp 	= alu_result >>> 8;
+		mult_x_a_temp 	= alu_result >> Win;
 		end
 	end
 	
@@ -153,7 +153,7 @@ case (current_state)
 		if (alu_result_valid) begin
 		alu_mode 		= ALU_IDLE;
 		next_state 		= EVAL;
-		mult_y_a_temp 	= alu_result >>> 8;
+		mult_y_a_temp 	= alu_result >> Win;
 		end		
 	end
 	EVAL: begin

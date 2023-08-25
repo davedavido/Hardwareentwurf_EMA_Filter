@@ -37,7 +37,7 @@ output reg						valid_o, bussy_o;
 
 reg 							valid_r;
 reg signed [Win-1:0]			x_r;
-reg 	   [Win-2:0]			alpha_r; //1Q15
+reg 	   [Win-2:0]			alpha_r;
 
 reg signed [Win-1:0]			x_save_temp, x_save_r;
 reg signed [Win-1:0]      		y_o_temp;
@@ -55,7 +55,6 @@ wire 							alu_result_valid, alu2_result_valid;
 wire signed [Winternal-1:0]		alu_result, alu2_result;
 reg signed [Winternal-1:0]		alu_result_r, alu2_result_r;
 
-//Mult x/y and Alpha
 reg signed [Win-1:0]		mult_x_a_temp, mult_x_a_r;
 reg signed [Win-1:0]		mult_y_a_temp, mult_y_a_r;
 
@@ -158,8 +157,8 @@ case (current_state)
 		alu_mode 		= ALU_IDLE;
 		alu2_mode		= ALU_IDLE;
 		next_state 		= EVAL ;
-		mult_x_a_temp 	= alu_result 	>>> (Win-1);
-		mult_y_a_temp 	= alu2_result 	>>> (Win-1);
+		mult_x_a_temp 	= alu_result >>> (Win-1);
+		mult_y_a_temp 	= alu2_result >>> (Win-1);
 		end
 	end
 	

@@ -34,6 +34,19 @@ add wave -noupdate /ema_tb/DUT/ALU/mode_i
 add wave -noupdate /ema_tb/DUT/ALU/mode_r
 add wave -noupdate /ema_tb/DUT/ALU/mult_res
 add wave -noupdate /ema_tb/DUT/ALU/add_res
+add wave -noupdate -divider ALU2
+add wave -noupdate /ema_tb/DUT/ALU2/op1_i
+add wave -noupdate /ema_tb/DUT/ALU2/op2_i
+add wave -noupdate /ema_tb/DUT/ALU2/valid_i
+add wave -noupdate /ema_tb/DUT/ALU2/mode_i
+add wave -noupdate /ema_tb/DUT/ALU2/res_o
+add wave -noupdate /ema_tb/DUT/ALU2/valid_o
+add wave -noupdate /ema_tb/DUT/ALU2/op1_r
+add wave -noupdate /ema_tb/DUT/ALU2/op2_r
+add wave -noupdate /ema_tb/DUT/ALU2/valid_r
+add wave -noupdate /ema_tb/DUT/ALU2/mode_r
+add wave -noupdate /ema_tb/DUT/ALU2/mult_res
+add wave -noupdate /ema_tb/DUT/ALU2/add_res
 add wave -noupdate -divider Zwischenwerte
 add wave -noupdate /ema_tb/DUT/y_last_r
 add wave -noupdate /ema_tb/DUT/mult_x_a_temp
@@ -46,7 +59,7 @@ add wave -noupdate /ema_tb/DUT/y_o
 add wave -noupdate /ema_tb/DUT/valid_o
 add wave -noupdate /ema_tb/DUT/bussy_o
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {14 ps} 0}
+WaveRestoreCursors {{Cursor 1} {25 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 340
 configure wave -valuecolwidth 212
@@ -63,4 +76,5 @@ configure wave -timeline 0
 configure wave -timelineunits ps
 update
 WaveRestoreZoom {0 ps} {54 ps}
+
 run -all

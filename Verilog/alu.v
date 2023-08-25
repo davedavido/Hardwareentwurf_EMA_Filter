@@ -16,12 +16,12 @@ parameter Wout 		= 32;
 input 					clk;
 input 					rst;
 input signed [Win-1:0] 	op1_i;
-input signed [Win:0]	op2_i; // Für alpha 
+input signed [Win-1:0]	op2_i; // Für alpha 
 input 					valid_i;
 input [1:0] 			mode_i;
 
 
-output reg signed  [Wout-1:0] res_o; //1 Bit mehr wegen alpha
+output reg signed  [Wout-1:0] res_o; 
 output reg valid_o;
 
 //ALU Modes
@@ -30,7 +30,7 @@ localparam ADD 		= 2'd1;
 localparam MULT		= 2'd2;
 
 reg signed [Win-1:0] 	op1_r;
-reg signed [Win:0] 		op2_r;
+reg signed [Win-1:0] 	op2_r;
 reg 					valid_r;
 reg [2:0] 				mode_r;
 

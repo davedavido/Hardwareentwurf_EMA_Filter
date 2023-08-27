@@ -16,7 +16,7 @@ parameter Wout 		= 32;
 input 					clk;
 input 					rst;
 input signed [Win-1:0] 	op1_i;
-input signed [Win-1:0]	op2_i; // Für alpha 
+input signed [Win-1:0]	op2_i; 
 input 					valid_i;
 input [1:0] 			mode_i;
 

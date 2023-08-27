@@ -4,7 +4,7 @@ reg clk, rst;
 
 
 reg [15:0] x_i; //Q16.0
-reg [14:0] alpha_i; //1Q.15 
+reg [14:0] alpha_i; //Q0.15 
 reg valid_i;
 
 wire signed [15:0] y_o; //Q16.0
@@ -41,7 +41,7 @@ initial begin
 	clk		= 0;
 	rst	    = 1;
 	x_i		= 16'd0;
-	alpha_i = 15'd9830; // > alpha = 0.3 1Q15
+	alpha_i = 15'd9830; // -> alpha = 0.3 Q0.15
 	#2
 	rst 		= 0;
 

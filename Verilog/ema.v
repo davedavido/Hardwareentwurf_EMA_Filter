@@ -35,6 +35,7 @@ input 							valid_i;
 output wire signed	[Wout-1:0] 	y_o;
 output reg						valid_o, bussy_o;
 
+// Internal Registers
 reg 							valid_r;
 reg signed [Win-1:0]			x_r;
 reg 	   [Win-2:0]			alpha_r;
@@ -55,6 +56,7 @@ wire 							alu_result_valid, alu2_result_valid;
 wire signed [Winternal-1:0]		alu_result, alu2_result;
 reg signed [Winternal-1:0]		alu_result_r, alu2_result_r;
 
+// Ergebnisregister
 reg signed [Win-1:0]		mult_x_a_temp, mult_x_a_r;
 reg signed [Win-1:0]		mult_y_a_temp, mult_y_a_r;
 
